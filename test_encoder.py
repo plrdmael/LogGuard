@@ -172,9 +172,3 @@ with open('scaler.pkl', 'rb') as f:
 with open('encoder.pkl','rb') as f:
     encoder = pickle.load(f)
 print(encoder)
-
-# new_data = converter.process_line('RemoteAddress=34.22.171.177 RemoteUser= TimeLocal=18/Jun/2024:00:49:19 +0200 Request=POST /data/v5/vayyar HTTP/1.1 Status=200 BodyBytesSent=0 Referer= UserAgent=axios/1.6.8 ForwardedFor= RT=0.055 UCT=0.000 UHT=0.044 URT=0.044 token=vayyar_api_prod:-1:0b4621fd3f1601c3c222b1a9535611e5 Body={"presenceDetected":false,"presenceRegionMap":{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0},"presenceTargetType":0,"roomPresenceIndication":0,"timestamp":1718664561634,"trackerTargets":[],"deviceId":"id_RTg6OUY6NkQ6RjA6Qzk6MTg"}')
-# process_new_data(new_data,model,scaler,encoder)
-
-# new_data = converter.process_line('RemoteAddress=31.161.207.219 RemoteUser= TimeLocal=18/Jun/2024:00:48:52 +0200 Request=GET /appnurse/v2/alarms-number HTTP/1.1 Status=200 BodyBytesSent=1 Referer= UserAgent=okhttp/3.10.0 ForwardedFor= RT=0.043 UCT=0.000 UHT=0.044 URT=0.044 token=Peronne:-1:7088912df52920efe330372b25f24e90 Body=')
-# process_new_data(new_data,model,scaler,encoder)
